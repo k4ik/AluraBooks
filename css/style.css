@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -30,4 +31,14 @@ body {
 
 .container-imagem {
     padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container-botao:checked ~ .lista-menu {
+    display: block;
 }
